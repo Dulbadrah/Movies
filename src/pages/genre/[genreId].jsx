@@ -1,5 +1,5 @@
 import { MovieCard } from "@/component/MovieCard";
-import { AllGenres } from "./Allgenres";
+import { AllGenres } from "../../component/Allgenres";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { genreMovieById } from "../../../utils/GenreMovieById";

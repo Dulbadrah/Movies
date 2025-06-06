@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { GetMovieByid } from "../../../utils/GetMovieById";
-import { DetailsHomePage } from "./DetailsHomePage";
-import { MovieCardsView } from "@/component/MovieCardsView";
-import { MoreLikeThis } from "./MoreLikeThis";
-import { TeamId } from "./TeamId";
-import { MovieTeam } from "./MovieTeam";
-import { useQueryState } from "nuqs";
+import { DetailsHomePage } from "../../component/DetailsHomePage";
+import { MoreLikeThis } from "../../component/MoreLikeThis";
+import { MovieTeam } from "../../component/MovieTeam";
 import { MovieDetailsLoading } from "@/component/MovieDetailsLoading";
 
 export default function Page() {

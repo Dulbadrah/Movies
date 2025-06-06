@@ -1,4 +1,3 @@
-import UpComingSet from "@/pages/UpComingSet";
 import { Popular } from "./Popular";
 import { TopRated } from "./TopRated";
 import { UpComing } from "./Upcoming";

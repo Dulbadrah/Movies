@@ -1,6 +1,6 @@
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import { ArrowBigRight, Star } from "lucide-react";
-import Link from "next/link";
+// import Link from "next/link";
 import { useRouter } from "next/router";
 
 export const SearchMovieCard = ({ movie, setSearchValue }) => {

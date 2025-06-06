@@ -7,7 +7,7 @@ export const SearchResult = ({ movies, setSearchValue }) => {
       {movies &&
         movies?.results
           ?.slice(0, 4)
-          .map((movie) => (
+          ?.map((movie) => (
             <SearchMovieCard movie={movie} setSearchValue={setSearchValue} />
           ))}
     </div>

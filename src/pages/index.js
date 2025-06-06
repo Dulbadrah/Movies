@@ -3,6 +3,7 @@ import { MovieCardsView } from "@/component/MovieCardsView";
 import { useEffect, useState } from "react";
 import { HomePageLoading } from "@/component/HomePageLoading";
 import { MovieLoading } from "@/component/MovieLoading";
+
 export default function Home() {
   const [NowPLayingMovie, setNowPlayingMovie] = useState([]);
   const [upComingMovies, setUpcomingMovies] = useState([]);

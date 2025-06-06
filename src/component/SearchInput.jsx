@@ -2,7 +2,6 @@ import { Input } from "@/components/ui/input";
 import { useEffect, useState } from "react";
 import { SearchResult } from "./SearchResulr";
 
-
 export const SearchInput = () => {
   const [searchValue, setSearchValue] = useState("");
   const [movies, setMovies] = useState([]);
@@ -37,7 +36,7 @@ export const SearchInput = () => {
           onChange={(event) => setSearchValue(event.target.value)}
           value={searchValue}
           type="search"
-          placeholder="Search Mockups, Logos..."
+          placeholder="Search..."
           required
         />
       </form>

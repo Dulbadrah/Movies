@@ -1,13 +1,10 @@
-import { AllGenres } from "../genre/Allgenres";
-import { SearchInput } from "./SearchInput";
-import { SearchMovieCard } from "./SearchMovieCard";
+import { SearchInput } from "@/component/SearchInput";
+import { AllGenres } from "../../component/Allgenres";
 
 export default function SearchHomePage() {
   return (
     <div className="flex justify-between p-10">
-      <div>
-        <SearchInput />
-      </div>
+      <div>vv</div>
       <div>
         <AllGenres />
       </div>
