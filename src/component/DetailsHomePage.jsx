@@ -6,7 +6,7 @@ export const DetailsHomePage = ({ movies }) => {
   const upComes = `${process.env.NEXT_PUBLIC_TMDB_IMAGE_SERVICE_URL}/original${movies?.poster_path}`;
   return (
     <div>
-      <div className="flex flex-col ">
+      <div className="flex flex-col pb-2 ">
         <div className="flex h-full w-full justify-between p-4">
           <div>
             <div className=" text-[30px]">{movies?.title}</div>
@@ -45,7 +45,7 @@ export const DetailsHomePage = ({ movies }) => {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex gap-2">
         <div className=" max-w-[200px] md:hidden ">
           <img
             src={upComes}

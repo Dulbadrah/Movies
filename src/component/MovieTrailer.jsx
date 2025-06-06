@@ -14,14 +14,14 @@ export const MovieTrailer = ({ movieId }) => {
       if (!movieId) return;
       try {
         const data = await getMovieTrailer(movieId);
-        setTrailer(data.results);
+        setTrailer(data?.results);
       } catch (error) {
         console.error("Failed to fetch movie trailer", error);
       }
     };
     getMovieTrailerById();
   }, [movieId]);
-  const MovieTrailer = trailer.find(
+  const MovieTrailer = trailer?.find(
     (vidio) => (vidio.name = "Official Trailer")
   );
   return (

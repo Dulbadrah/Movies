@@ -19,11 +19,10 @@ export const Header = () => {
         <div className="w-[397px] h-[36px] rounded-lg border-1 hidden md:flex">
           <SearchInput />
         </div>
-        <Link href={`search/searchHomePage`}>
-          <button className="w-[36px] h-[36px] rounded-md border-1 ">
-            <Search className="pl-2" />
-          </button>
-        </Link>
+
+        <button className="w-[36px] h-[36px] rounded-md border-1 ">
+          <Search className="pl-2" />
+        </button>
       </div>
       <div className="h-[50px] w-[80px] gap-6 flex pt-4.5 ">
         <div className="w-[36px] h-[36px] rounded-md border-1 pt-1  pl-1">

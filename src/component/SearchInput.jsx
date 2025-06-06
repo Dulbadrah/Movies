@@ -1,10 +1,17 @@
 import { Input } from "@/components/ui/input";
 import { useEffect, useState } from "react";
 import { SearchResult } from "./SearchResulr";
+import { useRouter } from "next/router";
 
 export const SearchInput = () => {
   const [searchValue, setSearchValue] = useState("");
   const [movies, setMovies] = useState([]);
+  const router = useRouter();
+
+  const routerPush = () => {
+    router?.push(`/search/searchHomePage/${searchValue}`);
+    setMovies("");
+  };
   const searchMovie = async () => {
     try {
       const response = await fetch(
@@ -19,7 +26,6 @@ export const SearchInput = () => {
       );
       const movies = await response.json();
       setMovies(movies);
-      //   console.log(movies);
     } catch (error) {
       console.log(error);
     }
@@ -33,6 +39,7 @@ export const SearchInput = () => {
         <Input
           className={"block w-full p-2 ps-10 text-sm"}
           id="default-search"
+          // onKeyDown={routerPush}
           onChange={(event) => setSearchValue(event.target.value)}
           value={searchValue}
           type="search"
